@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <Title>Lab Test Details</Title>
+    <link rel="stylesheet" href="../PharmacyManagement/CSS/labtest.css">
+</head>
+
+<body>
+
+    <div id="table-scroll" class="container_table">
+        <table>
+            <form id="labtest">
+                <tr>
+                    <td>
+                        <h3>1.Your Contact Details</h3>
+                    </td>
+                    <td rowspan="8" colspan="2">
+                        <div class="image">
+                            <img src="Images/Lab-Test/lab-test.jpg">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td><input type="text" id="name" placeholder="Full Name" required />
+
+                        <input type="number" id="pid" placeholder="Patient Id if exists" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="phone" name="phone" pattern="/^+91(7\d|8\d|9\d)\d{9}$/"
+                            placeholder="Contact Number" required />
+                        <input type="email" id="email" placeholder="Email id" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>2.Address</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="houseno" placeholder="H-No" required />
+                        <input type="text" id="street" placeholder="Street" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="area" name="area" placeholder="Area" required />
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h5>District</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="district" id="district" required>
+                            <option value="choose" selected>Choose</option>
+                            <option value="tamilnadu">Tamilnadu</option>
+                            <option value="karnataka">Karnataka</option>
+                            <option value="maharashra">Maharashra</option>
+                            <option value="uttarpradesh">Uttar Pradesh</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>3.Choose the Test Type.<h3>
+                                <h5>(Check atleast one box without fail)</h5>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <input type="checkbox" id="cbc" name="cbc" value="cbc">
+                        <label for="cbc">CBC</label>
+
+                        <input type="checkbox" id="urine" name="urine" value="urine">
+                        <label for="urine">Complete Urine</label>
+
+                        <input type="checkbox" id="lipid" name="lipid" value="lipid">
+                        <label for="lipid">Lipid Profile</label>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="thyroid" name="thyroid" value="thyroid">
+                        <label for="thyroid">Thyroid Stimulating Hormone</label>
+
+                        <input type="checkbox" id="glucose" name="glucose" value="glucose">
+                        <label for="glucose">Glucose Test</label>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <h3>4.Do you want a hard copy of the report also?</h3>
+                        <input type="radio" id="yes" name="report" value="yes">
+                        <label for="yes">Yes</label>
+
+                        <input type="radio" id="no" name="report" value="no">
+                        <label for="no">No</label>
+                    </td>
+                </tr>
+
+                <td>
+                    <h3>5.Select Your Comfortable Date and Time</h3>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                    <label for="time">Time</label>
+                    <input type="time" id="tme" name="time">
+                    <br><br>
+                </td>
+                </tr>
+
+            </form>
+
+
+
+        </table>
+    </div>
+    </div>
+    <div class="container">
+        <div class="center">
+            <button type="submit" form="labtest" class="button1" value="Submit">Submit</button>
+            <button type="reset" form="labtest" class="button1" value="Reset">Reset</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
